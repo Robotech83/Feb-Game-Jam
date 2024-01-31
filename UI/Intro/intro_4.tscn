@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://dl438odblx11o"]
+
+[ext_resource type="Script" path="res://UI/Intro/Scrpits/Intro4.gd" id="1_jl7l4"]
+[ext_resource type="Texture2D" uid="uid://k14wlhcqypgi" path="res://Art/Storyboard/storypanel4.png" id="2_gd62c"]
+
+[node name="Intro4" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 934.0
+offset_bottom = 432.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jl7l4")
+
+[node name="Storypanel4" type="Sprite2D" parent="."]
+position = Vector2(955.5, 460.25)
+scale = Vector2(1.17665, 1.14642)
+texture = ExtResource("2_gd62c")
+
+[node name="NextButton" type="Button" parent="Storypanel4"]
+offset_left = 3.0
+offset_top = 96.0
+offset_right = 99.0
+offset_bottom = 141.0
+text = "Next"
+
+[connection signal="pressed" from="Storypanel4/NextButton" to="." method="_on_button_pressed"]
