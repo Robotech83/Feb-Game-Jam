@@ -1,7 +1,7 @@
 [gd_scene load_steps=15 format=3 uid="uid://dn7fwvrogxbmd"]
 
 [ext_resource type="Script" path="res://Enemies/Script/tempslime.gd" id="1_7qfdd"]
-[ext_resource type="Texture2D" uid="uid://b10m6l3du6vgv" path="res://Art/Idle-Run (44x30).png" id="2_2d1f6"]
+[ext_resource type="Texture2D" uid="uid://b10m6l3du6vgv" path="res://Art/Enemies/Idle-Run (44x30).png" id="2_2d1f6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_807x1"]
 atlas = ExtResource("2_2d1f6")

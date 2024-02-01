@@ -1,9 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://ddbertqq0fu1i"]
+[gd_scene load_steps=11 format=3 uid="uid://ddbertqq0fu1i"]
 
 [ext_resource type="Texture2D" uid="uid://crbv26vai46ym" path="res://Art/Tilemap/160x160 background tilemap.png" id="1_agqay"]
 [ext_resource type="Texture2D" uid="uid://bdgkfbn6thdpb" path="res://Art/Tilemap/Basic Tilemap.png" id="2_73e76"]
 [ext_resource type="PackedScene" uid="uid://3gcu5v26lt6h" path="res://Player/Dael.tscn" id="3_5o7hk"]
 [ext_resource type="PackedScene" uid="uid://dn7fwvrogxbmd" path="res://Enemies/tempslime.tscn" id="4_7d4nm"]
+[ext_resource type="PackedScene" uid="uid://c48p13b5u83np" path="res://UI/Actionables/Actionable.tscn" id="5_bdphu"]
+[ext_resource type="Resource" uid="uid://c565ic5upfo8o" path="res://Dialogue/tutorial.dialogue" id="6_e4cie"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c73ld"]
 texture = ExtResource("1_agqay")
@@ -348,6 +350,9 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_c73ld")
 sources/1 = SubResource("TileSetAtlasSource_a6a2u")
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_nagyd"]
+radius = 26.0768
+
 [node name="Tutorial" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -363,3 +368,12 @@ position = Vector2(158, 331)
 
 [node name="tempslime" parent="." instance=ExtResource("4_7d4nm")]
 position = Vector2(652, 445)
+
+[node name="Actionable" parent="tempslime" instance=ExtResource("5_bdphu")]
+collision_layer = 1
+collision_mask = 17
+dialogue_resource = ExtResource("6_e4cie")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tempslime/Actionable"]
+position = Vector2(-29, -4)
+shape = SubResource("CircleShape2D_nagyd")

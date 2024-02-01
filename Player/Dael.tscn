@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=3 uid="uid://3gcu5v26lt6h"]
+[gd_scene load_steps=69 format=3 uid="uid://3gcu5v26lt6h"]
 
 [ext_resource type="Texture2D" uid="uid://dclqywpf3e315" path="res://Art/Player/Asset Pack-V4/Player Climb-Side/Player Side-Climb 48x48.png" id="1_1s430"]
 [ext_resource type="Script" path="res://Player/player.gd" id="1_aqhgy"]
@@ -449,6 +449,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1rmk6"]
+size = Vector2(14, 28)
+
 [node name="Dael" type="CharacterBody2D"]
 script = ExtResource("1_aqhgy")
 
@@ -460,3 +463,15 @@ shape = SubResource("CapsuleShape2D_itxes")
 sprite_frames = SubResource("SpriteFrames_sliln")
 animation = &"temp"
 frame_progress = 0.797029
+
+[node name="Direction" type="Marker2D" parent="."]
+position = Vector2(3, 2)
+
+[node name="ActionableFinder" type="Area2D" parent="Direction"]
+position = Vector2(6, 1)
+collision_layer = 0
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Direction/ActionableFinder"]
+position = Vector2(1, -1)
+shape = SubResource("RectangleShape2D_1rmk6")
