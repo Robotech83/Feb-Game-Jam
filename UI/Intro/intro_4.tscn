@@ -15,8 +15,8 @@ grow_vertical = 2
 script = ExtResource("1_jl7l4")
 
 [node name="Storypanel4" type="Sprite2D" parent="."]
-position = Vector2(955.5, 460.25)
-scale = Vector2(1.17665, 1.14642)
+position = Vector2(323, 150.749)
+scale = Vector2(0.403423, 0.394291)
 texture = ExtResource("2_gd62c")
 
 [node name="NextButton" type="Button" parent="Storypanel4"]

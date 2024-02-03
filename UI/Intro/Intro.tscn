@@ -10,22 +10,23 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 3.0
 offset_top = 3.0
-offset_right = 3.0
-offset_bottom = 3.0
+offset_right = -38.0
+offset_bottom = -11.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_wq5hs")
 
 [node name="Storypanel1" type="Sprite2D" parent="."]
-position = Vector2(743, 377.156)
-scale = Vector2(0.935208, 0.918211)
+position = Vector2(-40, -9.53674e-07)
+scale = Vector2(0.949878, 0.927096)
 texture = ExtResource("2_8llyc")
+centered = false
 
 [node name="Next" type="Button" parent="Storypanel1"]
-offset_left = 133.977
-offset_top = 180.591
-offset_right = 394.977
-offset_bottom = 260.591
+offset_left = 954.684
+offset_top = 584.976
+offset_right = 1215.68
+offset_bottom = 664.976
 text = "next
 "
 

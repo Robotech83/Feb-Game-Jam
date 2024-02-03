@@ -41,13 +41,13 @@
 [0,-3,0]
 0,0,0,0|||World/grapple.tscn
 [-7,-5,0]
-0,0,0,0|||
+0,0,0,0|||World/BackToTheCiy.tscn
 [-6,-5,0]
 0,0,0,0|||World/key1.tscn
 [-8,-5,0]
 0,0,0,0||0|World/home.tscn
 [-8,-4,0]
-0,0,0,0|||World/casino.tscn
+0,0,0,0|||Casino.tscn
 [-8,-6,0]
 0,0,0,0|||World/bar.tscn
 [-9,-5,0]
