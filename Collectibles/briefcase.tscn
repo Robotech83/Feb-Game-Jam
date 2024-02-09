@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://ct3uu81e5givd"]
 
-[ext_resource type="Script" path="res://Briefcase.gd" id="1_l024q"]
+[ext_resource type="Script" path="res://Collectibles/Briefcase.gd" id="1_l024q"]
 [ext_resource type="PackedScene" uid="uid://n4oaaj3b7yuo" path="res://interaction/interaction area/interaction_area.tscn" id="2_57611"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g1gn4"]

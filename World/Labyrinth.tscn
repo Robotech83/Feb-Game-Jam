@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bsg0351mx3b4u" path="res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn" id="1_b8oyl"]
 [ext_resource type="Texture2D" uid="uid://bdgkfbn6thdpb" path="res://Art/Tilemap/Basic Tilemap.png" id="2_1icf1"]
 [ext_resource type="PackedScene" uid="uid://3gcu5v26lt6h" path="res://Player/Dael.tscn" id="3_wqy1b"]
+[ext_resource type="PackedScene" uid="uid://ct3uu81e5givd" path="res://Collectibles/briefcase.tscn" id="4_1bim5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kjw4y"]
 texture = ExtResource("2_1icf1")
@@ -176,9 +177,6 @@ sources/0 = SubResource("TileSetAtlasSource_kjw4y")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o4toy"]
 size = Vector2(101, 139)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_8ogm0"]
-radius = 35.3553
-
 [node name="Map" type="Node2D"]
 
 [node name="RoomInstance" parent="." instance=ExtResource("1_b8oyl")]
@@ -198,10 +196,9 @@ layer_1/tile_data = PackedInt32Array(2686976, 65536, 4, 2752512, 65536, 4, 28180
 position = Vector2(2094.5, -52.5)
 shape = SubResource("RectangleShape2D_o4toy")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="TileMap"]
-position = Vector2(77, 638)
-shape = SubResource("CircleShape2D_8ogm0")
-
 [node name="Dael" parent="." instance=ExtResource("3_wqy1b")]
 position = Vector2(835, 318)
 collision_mask = 33
+
+[node name="Briefcase" parent="." instance=ExtResource("4_1bim5")]
+position = Vector2(24, 621)
