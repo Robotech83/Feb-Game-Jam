@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://ct3uu81e5givd"]
+
+[ext_resource type="Script" path="res://Briefcase.gd" id="1_l024q"]
+[ext_resource type="PackedScene" uid="uid://n4oaaj3b7yuo" path="res://interaction/interaction area/interaction_area.tscn" id="2_57611"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g1gn4"]
+size = Vector2(41, 28)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dkrem"]
+size = Vector2(61, 49)
+
+[node name="Briefcase" type="StaticBody2D"]
+script = ExtResource("1_l024q")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(10.5, 4)
+shape = SubResource("RectangleShape2D_g1gn4")
+
+[node name="InteractionArea" parent="." instance=ExtResource("2_57611")]
+action_name = "open"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2(20.5, 8.5)
+shape = SubResource("RectangleShape2D_dkrem")

@@ -13,6 +13,7 @@ func _physics_process(delta):
 		velocity.y += gravity * delta
 			# Handle jump.
 	
-
-
 	move_and_slide()
+
+
+	

@@ -38,12 +38,19 @@ theme_override_constants/separation = 32
 [node name="Seperator" type="Control" parent="TextureRect/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
+[node name="Label9" type="Label" parent="TextureRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "PostFuture"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Label" type="Label" parent="TextureRect/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0.780392, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 8
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 28
 text = "Game Design & Musician
 "
 horizontal_alignment = 1
@@ -54,7 +61,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0.454902, 0, 0.780392, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 8
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 28
 text = "RegularDael
 "
 horizontal_alignment = 1
@@ -62,30 +69,30 @@ vertical_alignment = 1
 
 [node name="Label2" type="Label" parent="TextureRect/MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0.780392, 1)
+theme_override_colors/font_color = Color(0.0509804, 0.921569, 0.188235, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 8
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 28
 text = "Artist"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label4" type="Label" parent="TextureRect/MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.0509804, 0.921569, 0.188235, 1)
+theme_override_colors/font_color = Color(1, 0, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 8
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 28
 text = "Dead Comedian"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label5" type="Label" parent="TextureRect/MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0.780392, 1)
+theme_override_colors/font_color = Color(0.454902, 0, 0.780392, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 8
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 28
 text = "Awesome Programmer
 "
 horizontal_alignment = 1
@@ -93,10 +100,10 @@ vertical_alignment = 1
 
 [node name="Label6" type="Label" parent="TextureRect/MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.0509804, 0.921569, 0.188235, 1)
+theme_override_colors/font_color = Color(0.00177986, 0.00164614, 0.00304126, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 8
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 28
 text = "Syndiicaate
 "
 horizontal_alignment = 1
@@ -107,7 +114,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0.454902, 0, 0.780392, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 8
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 28
 text = "UI Design & Programmer
 "
 horizontal_alignment = 1
@@ -118,7 +125,7 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0.0509804, 0.921569, 0.188235, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 8
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 28
 text = "Robotech83
 "
 horizontal_alignment = 1
