@@ -7,7 +7,7 @@
 size = Vector2(41, 28)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dkrem"]
-size = Vector2(61, 49)
+size = Vector2(36.5, 18)
 
 [node name="Briefcase" type="StaticBody2D"]
 script = ExtResource("1_l024q")
@@ -23,5 +23,5 @@ shape = SubResource("RectangleShape2D_g1gn4")
 action_name = "open"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
-position = Vector2(20.5, 8.5)
+position = Vector2(-2.25, 5)
 shape = SubResource("RectangleShape2D_dkrem")

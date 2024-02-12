@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbmg7y5ia4ecr"]
+
+[ext_resource type="PackedScene" uid="uid://5c5fr7l52bo7" path="res://World/Labyrinth.tscn" id="1_axexh"]
+[ext_resource type="PackedScene" uid="uid://3gcu5v26lt6h" path="res://Player/Dael.tscn" id="2_ugeih"]
+
+[node name="world" type="Node2D"]
+
+[node name="Map" parent="." instance=ExtResource("1_axexh")]
+
+[node name="Dael" parent="." instance=ExtResource("2_ugeih")]
+speed = 200.0
+jump_velocity = -150.0

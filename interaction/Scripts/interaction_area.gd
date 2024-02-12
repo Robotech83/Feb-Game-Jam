@@ -7,10 +7,10 @@ var interact : Callable = func():
 	pass
 
 
-func _on_body_entered(body):
+func _on_body_entered(player):
 	InteractionManager.register_area(self)
 	
 
 
-func _on_body_exited(body):
+func _on_body_exited(player):
 	InteractionManager.unregister_area(self)
