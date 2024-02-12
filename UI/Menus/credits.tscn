@@ -93,7 +93,7 @@ theme_override_colors/font_color = Color(0.454902, 0, 0.780392, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 8
 theme_override_font_sizes/font_size = 28
-text = "Awesome Programmer
+text = "Programmer
 "
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -104,7 +104,7 @@ theme_override_colors/font_color = Color(0.00177986, 0.00164614, 0.00304126, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 8
 theme_override_font_sizes/font_size = 28
-text = "Syndiicaate
+text = "
 "
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -115,7 +115,7 @@ theme_override_colors/font_color = Color(0.454902, 0, 0.780392, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 8
 theme_override_font_sizes/font_size = 28
-text = "UI Design & Programmer
+text = "UI Design & Lead Programmer
 "
 horizontal_alignment = 1
 vertical_alignment = 1
