@@ -6,8 +6,8 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g1gn4"]
 size = Vector2(24, 11)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_dkrem"]
-size = Vector2(36.5, 18)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mjcky"]
+size = Vector2(27, 12)
 
 [node name="Briefcase" type="StaticBody2D"]
 script = ExtResource("1_l024q")
@@ -23,5 +23,5 @@ action_name = "open"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
 visible = false
-position = Vector2(-2.25, 5)
-shape = SubResource("RectangleShape2D_dkrem")
+position = Vector2(-2.5, 6)
+shape = SubResource("RectangleShape2D_mjcky")

@@ -390,6 +390,6 @@ animation = &"Run"
 remote_path = NodePath("../Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(1.6, 1.6)
+zoom = Vector2(2, 2)
 limit_left = 0
-limit_bottom = 9993638
+limit_top = 0

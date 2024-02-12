@@ -370,10 +370,11 @@ position = Vector2(43, 396)
 position = Vector2(652, 445)
 
 [node name="InteractionArea" parent="tempslime" instance=ExtResource("5_0o4ek")]
+action_name = "talk"
 
 [node name="Talk" type="CollisionShape2D" parent="tempslime/InteractionArea"]
 visible = false
 shape = SubResource("CircleShape2D_k5svb")
 
 [node name="Briefcase" parent="." instance=ExtResource("6_2uyf2")]
-position = Vector2(34, 577)
+position = Vector2(33, 580)
