@@ -18,21 +18,47 @@ Bartender: [wait = 10] Here you go.
 	- Pretty Good
 		Bartender: Glad to hear it. Do you want another?
 		- yes
-			Bartender: Coming right up. 
+			Bartender: Coming right up. You feeling alright?
+			- yeah, I am good
+				Bartender: Really?
+				- Yea
+					Bartender: Well, I am glad you have good outlook on things
+				- Nope
+					Bartender: Is there anything I can do?
+					- yes
+						Bartender: What's up?
+						- Another drink
+							Bartender: Oh okay, but take it easy. It is scary out there.
+					- no
+						Bartender: Alright......
+			- nope
+				Bartender: I know things look like trash now, but I have a feeling things will be looking up soon.
 		- No
 			Bartender: Alright you have a good one and be safe out there.
 	- Horrible
 		Bartender: Really, Horrible? A DRAGON.........[wait = 25] has attacked the city....[wait = 10] and I am here.....[wait = 10] at Work.......[wait = 10] serving You.
+		- Sorry
+			Bartender: It's alright, How bad is it out there?
+			- Pretty Bad
+				Bartender: Here this one is on me.
+			- Nothing I can't handle.
+				Bartender: Alright, Hot Shot. Need another one?
+				- Yes
+					Bartender: Here you go
+				- No
+					Bartender: Alright. Later
+		- Really
+			Bartender: Dude, don't be a jerk. I was just asking 
 	- Have you seen the city? How do you think?
-		Bartender: Noooooooo.......[wait = 25] I have been tending bar all day. You Done Smarty Pants?
+		Bartender: Noooooooo....... I have been tending bar[wait = 25] all day. You Done Smarty Pants?
 		- yes
 			Bartender: Good! BYE
 		- no
 			Bartender: To bad, GET OUT!
-Bartender: Are you going to tip me?
+Bartender: Tip? I have to be here, Help me out.
 - yes
-	Bartender: Thank you. Here is a tip for you. [wait = 5] [[Press F for attack.|Briefcases holds all kinds of treasure.|Inside the Labyrinth there are]]
+	Bartender: Thank you. Here is a tip for you. [wait = 5] [[Press F for attack.|Briefcases holds all kinds of treasure.|Go to the Gym if you want to level up]]
 - no
-	Bartender:  [wait = 5 ]Aint you Cheap today.
+	Bartender:  Ain't you[wait = 5] Cheap today.
 => END
 => END!
