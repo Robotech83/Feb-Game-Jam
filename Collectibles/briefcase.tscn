@@ -10,6 +10,7 @@ size = Vector2(24, 11)
 size = Vector2(27, 12)
 
 [node name="Briefcase" type="StaticBody2D"]
+collision_layer = 16
 script = ExtResource("1_l024q")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

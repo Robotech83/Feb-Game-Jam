@@ -1,0 +1,12 @@
+~ talk_to_bartender
+
+Bartender: Here you go.
+- Why does this taste like trash?
+	Bartender: Don't be rude!
+- How is your day going?
+	Bartender: It is going well. How is yours?
+	- Pretty Good
+	- Horrible
+	- Have you seen the city? How do you think?
+
+=> END

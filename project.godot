@@ -94,6 +94,10 @@ climb={
 ]
 }
 
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://Dialogue/CityScene/Order_a_Drink.dialogue", "res://Dialogue/CityScene/talk_to_bartender.dialogue")
+
 [layer_names]
 
 2d_physics/layer_1="world"
@@ -103,6 +107,7 @@ climb={
 2d_physics/layer_5="Actionable"
 2d_physics/layer_6="enemy_hitbox"
 2d_physics/layer_7="enemy_hurtbox"
+2d_physics/layer_8="wizard"
 
 [physics]
 

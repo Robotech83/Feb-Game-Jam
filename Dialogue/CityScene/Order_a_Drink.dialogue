@@ -1,0 +1,38 @@
+~ Order_a_drink
+
+Bartender: [[Hello|Hi|Welcome in]]! [wait =1] What can I get you?
+- Beer
+	Bartender: [wait = 2] Coming right up. 
+
+- Whiskey
+	Bartender: [wait = 2] Coming right up. 
+
+- Something Fruity 
+	Bartender: Really? 
+	
+Bartender: [wait = 10] Here you go.
+- Why does this taste like trash?
+	Bartender:  You are what you.... [wait = 10] you drink.
+- How is your day going?
+	Bartender: It is going well. How is yours?
+	- Pretty Good
+		Bartender: Glad to hear it. Do you want another?
+		- yes
+			Bartender: Coming right up. 
+		- No
+			Bartender: Alright you have a good one and be safe out there.
+	- Horrible
+		Bartender: Really, Horrible? A DRAGON.........[wait = 25] has attacked the city....[wait = 10] and I am here.....[wait = 10] at Work.......[wait = 10] serving You.
+	- Have you seen the city? How do you think?
+		Bartender: Noooooooo.......[wait = 25] I have been tending bar all day. You Done Smarty Pants?
+		- yes
+			Bartender: Good! BYE
+		- no
+			Bartender: To bad, GET OUT!
+Bartender: Are you going to tip me?
+- yes
+	Bartender: Thank you. Here is a tip for you. [wait = 5] [[Press F for attack.|Briefcases holds all kinds of treasure.|Inside the Labyrinth there are]]
+- no
+	Bartender:  [wait = 5 ]Aint you Cheap today.
+=> END
+=> END!
