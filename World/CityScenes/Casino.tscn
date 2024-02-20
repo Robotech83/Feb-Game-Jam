@@ -1,7 +1,10 @@
 [gd_scene load_steps=2 format=3 uid="uid://c11flxqswbw38"]
 
-[ext_resource type="PackedScene" uid="uid://bsg0351mx3b4u" path="res://addons/MetroidvaniaSystem/Nodes/RoomInstance.tscn" id="1_l0ajq"]
+[ext_resource type="Texture2D" uid="uid://pau81ex3kcdn" path="res://Art/Backgrounds/Casino.jpg" id="1_dr1pk"]
 
-[node name="Map" type="Node2D"]
+[node name="Casino" type="Node2D"]
 
-[node name="RoomInstance" parent="." instance=ExtResource("1_l0ajq")]
+[node name="Casino" type="Sprite2D" parent="."]
+position = Vector2(613, 334.75)
+scale = Vector2(5.20152, 5.3069)
+texture = ExtResource("1_dr1pk")

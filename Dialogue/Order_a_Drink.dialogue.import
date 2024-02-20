@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://btnjsqfhyl0hc"
+path="res://.godot/imported/Order_a_Drink.dialogue-5aa14c821af1db2c09e10af535e86ca2.tres"
+
+[deps]
+
+source_file="res://Dialogue/Order_a_Drink.dialogue"
+dest_files=["res://.godot/imported/Order_a_Drink.dialogue-5aa14c821af1db2c09e10af535e86ca2.tres"]
+
+[params]
+
+defaults=true

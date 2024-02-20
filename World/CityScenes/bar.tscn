@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://6mwlj76wbirm"]
+[gd_scene load_steps=2 format=3 uid="uid://blwclnhccbbgt"]
 
-[node name="City" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://b37epu3vkf7nu" path="res://Art/Backgrounds/il_fullxfull.4147345117_osht.jpg" id="1_ogmse"]
+
+[node name="bar" type="Node2D"]
+
+[node name="IlFullxfull_4147345117Osht" type="Sprite2D" parent="."]
+position = Vector2(587, 369)
+texture = ExtResource("1_ogmse")

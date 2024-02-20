@@ -1,0 +1,39 @@
+~ talk_to_dealer
+Dealer: Welcom to the table,[wait = 5] what would you like to play today?
+- [[Hi|Hello|Howdy]] there! Want to try my hand at Blackjack.
+	Dealer: Good Choice
+	Dealer: Place Bet.
+	- $25
+	- $50
+	- $100
+	Dealer: Would you like to hear the rules of the game
+	- Yes
+		Dealer: The primary goal of blackjack is to beat the dealer's hand without exceeding a total of 21.
+			
+	- No 
+- I need a big win, Let's play Texas hold'em.
+	Dealer: Good luck
+- I am live on the wild side. Let's test my luck Roulette.
+	Dealer: Oh look at you. On the dangerous side of things huh?
+	- Yep
+		Dealer: Alright, Your choice Gun or Wheel
+		- Gun
+			Dealer: Oh you crazy. It was a joke.
+			Dael: Oh..... [wait = 5], I knew that.
+			Dealer: Buy in is $100. You good with that
+			- Yes 
+			- Awww hell naw.
+				Dealer: What's wrong
+				- Ain't that steep?
+					Dealer: Not, really. This is the only establishment open after the attck. We can charge whatever we want.
+				- To rich for my blood => END!
+		- Wheel
+	- Nope
+		Dealer: Buy in $100, you okay with that?
+		- Yes
+		- No 
+			Dealer: Got to spend money to make money.
+			- Guess I dont have a choice.
+			- Naw I am good. => END!
+Dealer: Let's begin.
+=> END

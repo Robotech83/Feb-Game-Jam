@@ -1,0 +1,77 @@
+~ Order_a_drink
+
+Bartender: [[Hello|Hi|Welcome in]]! [wait =5] What can I get you?
+- Beer
+	Bartender: [wait = 2] Coming right up. 
+
+- Whiskey
+	Bartender: [wait = 2] Coming right up. 
+
+- Something Fruity 
+	Bartender: Really? 
+	
+Bartender: [wait = 10] Here you go.
+- Why does this taste like trash?
+	Bartender:  You are what you.... [wait = 10] you drink. You Done?
+	- yes
+		Bartender: Good
+	- no
+		Bartender: What do you want?
+		- another
+			Bartender: Okay
+			- Thanks
+			- Another
+				Bartender: I think you have had enough. Sorry.
+		- surprize me
+			Bartender: Coming up. 
+
+
+- How is your day going?
+	Bartender: It is going well. How is yours?
+	- Pretty Good
+		Bartender: Glad to hear it. Do you want another?
+		- yes
+			Bartender: Coming right up. You feeling alright?
+			- yeah, I am good
+				Bartender: Really?
+				- Yea
+					Bartender: Well, I am glad you have good outlook on things
+				- Nope
+					Bartender: Is there anything I can do?
+					- yes
+						Bartender: What's up?
+						- Another drink
+							Bartender: Oh okay, but take it easy. It is scary out there.
+					- no
+						Bartender: Alright......
+			- nope
+				Bartender: I know things look like trash now, but I have a feeling things will be looking up soon.
+		- No
+			Bartender: Alright you have a good one and be safe out there.
+	- Horrible
+		Bartender: Really, Horrible? A DRAGON.........[wait = 25] has attacked the city....[wait = 10] and I am here.....[wait = 10] at Work.......[wait = 10] serving You.
+		- Sorry
+			Bartender: It's alright, How bad is it out there?
+			- Pretty Bad
+				Bartender: Here this one is on me.
+			- Nothing I can't handle.
+				Bartender: Alright, Hot Shot. Need another one?
+				- Yes
+					Bartender: Here you go
+				- No
+					Bartender: Alright. Later
+		- Really
+			Bartender: Dude, don't be a jerk. I was just asking 
+	- Have you seen the city? How do you think?
+		Bartender: Noooooooo....... I have been tending bar[wait = 25] all day. You Done Smarty Pants?
+		- yes
+			Bartender: Good! BYE
+		- no
+			Bartender: To bad, GET OUT!
+Bartender: Tip? I have to be here, Help me out.
+- yes
+	Bartender: Thank you. [wait = 5]Here is a tip for you.  [[Press F to attack.|Briefcases hold all kinds of treasure.|You can go to the Gym for leveling up.]] 
+- no
+	Bartender:  Ain't you[wait = 5] Cheap today.
+=> END
+=> END!

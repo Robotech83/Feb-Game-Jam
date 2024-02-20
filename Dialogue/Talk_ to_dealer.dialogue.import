@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_11"
+type="Resource"
+uid="uid://c44fgmpgy8bwe"
+path="res://.godot/imported/Talk_ to_dealer.dialogue-8da6eeb72bec94c2b8ab53b4762347aa.tres"
+
+[deps]
+
+source_file="res://Dialogue/Talk_ to_dealer.dialogue"
+dest_files=["res://.godot/imported/Talk_ to_dealer.dialogue-8da6eeb72bec94c2b8ab53b4762347aa.tres"]
+
+[params]
+
+defaults=true
