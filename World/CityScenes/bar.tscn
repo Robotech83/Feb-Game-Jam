@@ -1,9 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://blwclnhccbbgt"]
+[gd_scene load_steps=3 format=3 uid="uid://blwclnhccbbgt"]
 
-[ext_resource type="Texture2D" uid="uid://b37epu3vkf7nu" path="res://Art/Backgrounds/il_fullxfull.4147345117_osht.jpg" id="1_ogmse"]
+[ext_resource type="Script" path="res://World/CityScenes/Scripts/bar.gd" id="1_6wfw0"]
+[ext_resource type="PackedScene" uid="uid://73jm5qjy52vq" path="res://Test/balloon_casino.tscn" id="2_oupem"]
 
 [node name="bar" type="Node2D"]
+script = ExtResource("1_6wfw0")
 
-[node name="IlFullxfull_4147345117Osht" type="Sprite2D" parent="."]
-position = Vector2(587, 369)
-texture = ExtResource("1_ogmse")
+[node name="ExampleBalloon" parent="." instance=ExtResource("2_oupem")]

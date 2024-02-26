@@ -89,7 +89,4 @@ offset_bottom = 635.0
 text = "To Labyrinth"
 
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/BarButton" to="." method="_on_bar_button_pressed"]
-[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/GymButton" to="." method="_on_gym_button_pressed"]
-[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/CasinoButton" to="." method="_on_casino_button_pressed"]
-[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/HomeButton" to="." method="_on_home_button_pressed"]
 [connection signal="pressed" from="LabyrinthButton" to="." method="_on_labyrinth_button_pressed"]

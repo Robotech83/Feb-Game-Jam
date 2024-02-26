@@ -1,0 +1,74 @@
+[gd_scene load_steps=4 format=3 uid="uid://6uqvlhqhhacx"]
+
+[ext_resource type="Texture2D" uid="uid://bvroyqamm26cs" path="res://Art/TextBox/textbox1.png" id="1_bqena"]
+[ext_resource type="Script" path="res://Dialogue/dialogue_test.gd" id="1_iua0n"]
+[ext_resource type="PackedScene" uid="uid://hto6ao1nw7jy" path="res://Dialogue/dialogue_label.tscn" id="3_ch5dk"]
+
+[node name="dialogue_bar" type="CanvasLayer"]
+script = ExtResource("1_iua0n")
+
+[node name="Ballon" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -198.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Ballon"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -152.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("1_bqena")
+
+[node name="DialogueBox" type="MarginContainer" parent="Ballon/NinePatchRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Ballon/NinePatchRect/DialogueBox"]
+layout_mode = 2
+
+[node name="Character" type="RichTextLabel" parent="Ballon/NinePatchRect/DialogueBox/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+fit_content = true
+scroll_active = false
+scroll_following = true
+
+[node name="DialogueLabel" parent="Ballon/NinePatchRect/DialogueBox/VBoxContainer" instance=ExtResource("3_ch5dk")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+fit_content = true
+
+[node name="Responses" type="MarginContainer" parent="Ballon"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -120.0
+offset_top = -562.0
+offset_right = 521.0
+offset_bottom = -158.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[connection signal="gui_input" from="Ballon" to="." method="_on_ballon_gui_input"]

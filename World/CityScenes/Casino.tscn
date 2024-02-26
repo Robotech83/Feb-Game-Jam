@@ -1,10 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://c11flxqswbw38"]
 
-[ext_resource type="Texture2D" uid="uid://pau81ex3kcdn" path="res://Art/Backgrounds/Casino.jpg" id="1_dr1pk"]
+[ext_resource type="Script" path="res://World/CityScenes/Scripts/Casino.gd" id="1_ghy2h"]
 
 [node name="Casino" type="Node2D"]
-
-[node name="Casino" type="Sprite2D" parent="."]
-position = Vector2(613, 334.75)
-scale = Vector2(5.20152, 5.3069)
-texture = ExtResource("1_dr1pk")
+script = ExtResource("1_ghy2h")

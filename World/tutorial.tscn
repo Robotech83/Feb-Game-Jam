@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://crbv26vai46ym" path="res://Art/Tilemap/160x160 background tilemap.png" id="1_agqay"]
 [ext_resource type="Texture2D" uid="uid://bdgkfbn6thdpb" path="res://Art/Tilemap/Basic Tilemap.png" id="2_73e76"]
-[ext_resource type="PackedScene" uid="uid://3gcu5v26lt6h" path="res://Player/Dael.tscn" id="3_5o7hk"]
+[ext_resource type="PackedScene" uid="uid://3gcu5v26lt6h" path="res://entites/Player/Dael.tscn" id="3_5o7hk"]
 [ext_resource type="PackedScene" uid="uid://dn7fwvrogxbmd" path="res://Enemies/tempslime.tscn" id="4_7d4nm"]
 [ext_resource type="PackedScene" uid="uid://n4oaaj3b7yuo" path="res://interaction/interaction area/interaction_area.tscn" id="5_0o4ek"]
 [ext_resource type="PackedScene" uid="uid://ct3uu81e5givd" path="res://Collectibles/briefcase.tscn" id="6_2uyf2"]
