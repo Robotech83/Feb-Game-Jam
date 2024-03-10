@@ -1,0 +1,30 @@
+[gd_scene load_steps=10 format=3 uid="uid://bde7txhsxtp0p"]
+
+[ext_resource type="Script" path="res://Entites/Player/Scripts/STATES.gd" id="1_md836"]
+[ext_resource type="PackedScene" uid="uid://caovgt382a8m2" path="res://Entites/Player/Scene/IDLE.tscn" id="2_xo1yt"]
+[ext_resource type="PackedScene" uid="uid://c53nma28locfc" path="res://Entites/Player/Scene/JUMP.tscn" id="3_pp6tr"]
+[ext_resource type="PackedScene" uid="uid://bctka1oso7lro" path="res://Entites/Player/Scene/MOVE.tscn" id="4_b3qfa"]
+[ext_resource type="PackedScene" uid="uid://cjdwli1lgutye" path="res://Entites/Player/Scene/SLIDE.tscn" id="5_j4wql"]
+[ext_resource type="PackedScene" uid="uid://b222cw35oev1j" path="res://Entites/Player/Scene/ATTACK.tscn" id="6_fibab"]
+[ext_resource type="PackedScene" uid="uid://cwo7rsen4mqli" path="res://Entites/Player/Scene/CROUCH.tscn" id="7_8pnbh"]
+[ext_resource type="PackedScene" uid="uid://dkhvy14dfvbg1" path="res://Entites/Player/Scene/FALL.tscn" id="8_b5lqs"]
+
+[sub_resource type="GDScript" id="GDScript_r1qlg"]
+
+[node name="STATES" type="Node"]
+script = ExtResource("1_md836")
+
+[node name="IDLE" parent="." instance=ExtResource("2_xo1yt")]
+
+[node name="JUMP" parent="." instance=ExtResource("3_pp6tr")]
+
+[node name="MOVE" parent="." instance=ExtResource("4_b3qfa")]
+
+[node name="SLIDE" parent="." instance=ExtResource("5_j4wql")]
+script = SubResource("GDScript_r1qlg")
+
+[node name="ATTACK" parent="." instance=ExtResource("6_fibab")]
+
+[node name="CROUCH" parent="." instance=ExtResource("7_8pnbh")]
+
+[node name="FALL" parent="." instance=ExtResource("8_b5lqs")]

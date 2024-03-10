@@ -14,17 +14,20 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ss3v7")
 
-[node name="Storypanel3" type="Sprite2D" parent="."]
-position = Vector2(295.626, 157)
-scale = Vector2(0.391656, 0.413122)
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -77.0
+offset_right = 308.0
+offset_bottom = 154.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("2_mkpld")
 
-[node name="NextButton" type="Button" parent="Storypanel3"]
-offset_left = 89.993
-offset_top = 91.7305
-offset_right = 178.993
-offset_bottom = 137.731
-text = "Next
-"
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
 
-[connection signal="pressed" from="Storypanel3/NextButton" to="." method="_on_next_button_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

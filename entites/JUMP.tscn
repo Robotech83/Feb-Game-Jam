@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://c53nma28locfc"]
-
-[ext_resource type="Script" path="res://entites/Player/Scripts/JUMP.gd" id="1_od5wp"]
-
-[node name="JUMP" type="Node"]
-script = ExtResource("1_od5wp")

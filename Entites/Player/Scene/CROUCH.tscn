@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwo7rsen4mqli"]
+
+[ext_resource type="Script" path="res://Entites/Player/Scripts/CROUCH.gd" id="1_6adot"]
+
+[node name="CROUCH" type="Node"]
+script = ExtResource("1_6adot")

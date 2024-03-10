@@ -1,5 +1,5 @@
 extends BaseDialogueTestScene
-
+#BUG: Dialogue doesnt switch
 
 func _ready() -> void:
 	var ballon = load("res://Test/balloon_casino.tscn").instantiate()

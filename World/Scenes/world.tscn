@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbmg7y5ia4ecr"]
+
+[ext_resource type="PackedScene" uid="uid://by7lnva6m2pxb" path="res://World/Scenes/Labyrinth.tscn" id="1_axexh"]
+
+[node name="world" type="Node2D"]
+
+[node name="Map" parent="." instance=ExtResource("1_axexh")]
+position = Vector2(236, 290)

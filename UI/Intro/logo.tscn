@@ -1,0 +1,80 @@
+[gd_scene load_steps=9 format=3 uid="uid://dbvo762wui3kl"]
+
+[ext_resource type="Script" path="res://UI/Intro/Scrpits/Intro.gd" id="1_ylv3m"]
+[ext_resource type="Texture2D" uid="uid://dt5d2x28f4fyx" path="res://Art/Backgrounds/logo.png" id="2_8jte7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gqk1w"]
+atlas = ExtResource("2_8jte7")
+region = Rect2(0, 0, 111, 111)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5fgqr"]
+atlas = ExtResource("2_8jte7")
+region = Rect2(111, 0, 111, 111)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5gqkc"]
+atlas = ExtResource("2_8jte7")
+region = Rect2(222, 0, 111, 111)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fp7io"]
+atlas = ExtResource("2_8jte7")
+region = Rect2(333, 0, 111, 111)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lgg6f"]
+atlas = ExtResource("2_8jte7")
+region = Rect2(444, 0, 111, 111)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f8s17"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gqk1w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5fgqr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5gqkc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fp7io")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lgg6f")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Logo" type="Node2D"]
+script = ExtResource("1_ylv3m")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1292.0
+offset_bottom = 768.0
+color = Color(0, 0, 0.780392, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(634, 282.875)
+scale = Vector2(4.05405, 3.52928)
+sprite_frames = SubResource("SpriteFrames_f8s17")
+frame_progress = 0.625983
+
+[node name="Label" type="Label" parent="."]
+offset_left = 409.0
+offset_top = 511.0
+offset_right = 859.0
+offset_bottom = 631.0
+theme_override_colors/font_color = Color(0.533333, 0.952941, 0.87451, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = "POST FUTURE 
+GAMES"
+horizontal_alignment = 1
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 6.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

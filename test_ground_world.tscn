@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://h3wushm76vdi"]
 
-[ext_resource type="PackedScene" uid="uid://3gcu5v26lt6h" path="res://entites/Player/Dael.tscn" id="1_j8kt4"]
+[ext_resource type="PackedScene" uid="uid://3gcu5v26lt6h" path="res://Entites/Player/Scene/Player.tscn" id="1_j8kt4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5vtc4"]
 size = Vector2(1201.5, 20)
@@ -19,4 +19,4 @@ offset_right = 1170.0
 offset_bottom = 688.0
 
 [node name="Player" parent="." instance=ExtResource("1_j8kt4")]
-position = Vector2(228, 541)
+position = Vector2(136, 58)

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://pws4jg75ayxy"]
+
+[ext_resource type="PackedScene" uid="uid://cou7nupj3lmwf" path="res://UI/Menus/Options_Menu/Scenes/display_button.tscn" id="1_5rokl"]
+[ext_resource type="Script" path="res://UI/Menus/Options_Menu/Scripts/window_display_button.gd" id="2_rlujh"]
+
+[node name="Window_Mode_Button" instance=ExtResource("1_5rokl")]
+script = ExtResource("2_rlujh")
+
+[node name="Label" parent="HBoxContainer" index="0"]
+text = "Window Mode"
+
+[node name="OptionButton" parent="HBoxContainer" index="2"]
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
