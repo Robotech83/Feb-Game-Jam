@@ -3,6 +3,7 @@ extends CharacterBody2D
 # player_movement
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
+var last_direction = Vector2.RIGHT
 
 # nodes
 @onready var interact_ui = $InteractUI
@@ -34,8 +35,9 @@ func _ready():
 func _physics_process(delta):
 	player_input()
 	change_state(current_state.update(delta))
-	$Label.text = str(current_state.get_name())
-	#default_move(delta)
+	$DebubStates.text = str(current_state.get_name())
+	move_and_slide()
+	
 
 func gravity(delta):
 		# Add the gravity.
