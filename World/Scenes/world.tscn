@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://dbmg7y5ia4ecr"]
+[gd_scene load_steps=3 format=3 uid="uid://dbmg7y5ia4ecr"]
 
-[ext_resource type="PackedScene" uid="uid://by7lnva6m2pxb" path="res://World/Scenes/Labyrinth.tscn" id="1_axexh"]
+[ext_resource type="PackedScene" uid="uid://dby7b3mbqcj7c" path="res://World/Scenes/tutorial.tscn" id="1_lsfc4"]
+[ext_resource type="PackedScene" uid="uid://3gcu5v26lt6h" path="res://Entites/Player/Scene/Player.tscn" id="2_it07m"]
 
 [node name="world" type="Node2D"]
 
-[node name="Map" parent="." instance=ExtResource("1_axexh")]
-position = Vector2(236, 290)
+[node name="tutorial" parent="." instance=ExtResource("1_lsfc4")]
+
+[node name="Player" parent="." instance=ExtResource("2_it07m")]
