@@ -3,11 +3,14 @@ extends CharacterBody2D
 # player_movement
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
-var last_direction = Vector2.RIGHT
+var last_direction = Vector2.ZERO
+
 
 # nodes
 @onready var interact_ui = $InteractUI
 @onready var STATES = $STATES
+@onready var anim = $AnimatedSprite2D
+
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity_value = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -57,8 +60,10 @@ func player_input():
 	# Moving Up and Left is negative and Down and Right is Positive
 	if Input.is_action_pressed("move_right"):
 		movement_input.x += 1
+		anim.flip_h = false
 	if Input.is_action_pressed("move_left"):
 		movement_input.x -= 1
+		anim.flip_h = true
 	if Input.is_action_pressed("move_up"):
 		movement_input.y -= 1
 	if Input.is_action_pressed("move_down"):
@@ -80,12 +85,7 @@ func player_input():
 	else:
 		crouch_input = false
 		
-	# Slide
-	if Input.is_action_pressed("slide"):
-		slide_input = true
-	else:
-		slide_input = false
-	
+
 	# Slide
 	if Input.is_action_pressed("attack"):
 		attack_input = true
