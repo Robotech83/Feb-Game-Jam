@@ -3,18 +3,23 @@ extends "state.gd"
 
 
 func update(delta):
-	Player.anim.play("ATTACK")
 	Player.gravity(delta)
 	player_movement()
+	#Connor_finished()
+	
+func enter_state():
+
+	Player.anim.play("ATTACK")
 	if Player.attack_input == true:
 		return STATES.ATTACK
-	if Player.movement_input.x != 0:
-		return STATES.MOVE
-	if Player.jump_input_actuation == true:
-		return STATES.JUMP
-	if Player.velocity.x == 0:
+	else: 
+		Player.attack_input == false
 		return STATES.IDLE
 	return null
 
-func exit_state():
-	pass
+func Connor_finished():
+	if Player.verbose:
+		print("test")
+	Player.attack_input = false
+	return null
+

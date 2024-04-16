@@ -452,7 +452,7 @@ radius = 5.0
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_hshuy")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="Connor" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_sliln")
 animation = &"ATTACK"
 
@@ -521,3 +521,5 @@ offset_top = -42.0
 offset_right = 39.0
 offset_bottom = -19.0
 text = "STATE: "
+
+[connection signal="animation_finished" from="Connor" to="STATES/ATTACK" method="Connor_finished"]

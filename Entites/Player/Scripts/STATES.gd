@@ -7,7 +7,7 @@ extends Node
 @onready var FALL = $FALL
 
 #@onready var slide = $SLIDE
-@onready var CROUCH = $CROUCH
+#@onready var CROUCH = $CROUCH
 @onready var ATTACK = $ATTACK
 
 # Called when the node enters the scene tree for the first time.

@@ -139,4 +139,4 @@ func _on_responses_menu_response_selected(response: DialogueResponse) -> void:
 
 
 func _on_button_pressed():
-	get_tree().change_scene_to_file("res://UI/Menus/CityMenu.tscn")
+	get_tree().change_scene_to_file("res://UI/Menus/main_menus/CityMenu.tscn")

@@ -9,7 +9,7 @@ var last_direction = Vector2.ZERO
 # nodes
 @onready var interact_ui = $InteractUI
 @onready var STATES = $STATES
-@onready var anim = $AnimatedSprite2D
+@onready var anim = $Connor
 
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -26,6 +26,7 @@ var jump_input_actuation = false
 var crouch_input = false
 var slide_input = false
 var attack_input = false
+@export var verbose : bool = true
 
 
 func _ready():
@@ -91,6 +92,9 @@ func player_input():
 		attack_input = true
 	else:
 		attack_input = false
+
+
+
 
 
 

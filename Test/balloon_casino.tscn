@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://73jm5qjy52vq"]
+[gd_scene load_steps=10 format=3 uid="uid://73jm5qjy52vq"]
 
 [ext_resource type="Script" path="res://Test/balloon_casino.gd" id="1_gf3up"]
+[ext_resource type="Texture2D" uid="uid://pau81ex3kcdn" path="res://Art/Backgrounds/Casino.jpg" id="2_kkyap"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="3_n1feu"]
 [ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_reponses_menu.gd" id="4_cq50a"]
 
@@ -73,16 +74,20 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 9.0
+offset_right = 9.0
+offset_bottom = -2.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_qq3yp")
 
 [node name="TextureRect" type="TextureRect" parent="Balloon"]
 layout_mode = 0
-offset_left = -15.0
-offset_top = -21.0
+offset_left = -8.0
+offset_top = 6.0
 offset_right = 1286.0
-offset_bottom = 686.0
+offset_bottom = 754.0
+texture = ExtResource("2_kkyap")
 
 [node name="Panel" type="Panel" parent="Balloon"]
 clip_children = 2
